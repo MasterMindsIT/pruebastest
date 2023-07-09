@@ -1,0 +1,100 @@
+1.- En que se diferencian el git stash y git stash pop
+		Git stash elimina un commit el histórico del repositorio, mientras que git stash pop guarda los cambios en las ramas diferentes
+        Git stash guarda los cambios en ramas diferentes, mientras que git stash pop elimina un commit del histórico del repositorio**
+        Git stash elimina el commit más reciente, mientras que git stash pop guarda los cambios actuales
+        Git stash crea una entrada stash, mientras que git stash poptrae el estado guardado al directorio de trabajo
+
+2.-En git, como puedo guardar temporalmente trabajo local sin tener que hacer un commit?
+Usando git local-cache
+        Usando gi hold
+        No es posible. Hay que realizar un commit
+        Usando git stash**
+
+3.- Que comandos forzarán una sobreescritura de los archivos locales de la rama master?
+	Git pull --all git reset --hard origin/master
+	Git pull -u origin master git reset --hard master**
+	Git pull origin master git reset --hard origin/MiRamaActual
+	Git fetch --all git reset -hard origin/master
+4.-Que palabra usamos para referirnos al repositorio remoto del cual clonamos?
+	Origin**
+	Tag
+	Head
+index
+5.- Cuando usamos el comando git log ¿que opción debemos añadir para limitar la información de los commits a partir de una fecha determindada?
+	--since**
+	--sinceWhen
+	--after
+	--afterDate
+6.- Como podemos consolidar varios commits de un unico y coherente commit con la intención de reestructurar el historico del repositorio?
+	Usando git commint -a
+Usando git push
+Usando git squash**
+Usando git rebase
+7.- como podemos eliminar archivos “untracked” del directorio de trabajo?
+	Git rm .
+Git checkout
+Git reset head
+Git clean -f**
+8.- De las siguientes afirmaciones cual no es cierta?
+	Git por defecto ofrece una rama master
+	Las operaciones “clone” de git crean una instancia de repositorio
+	Las operaciones “pull” copian los cambios de un repositorio local a un repositorio remoto**
+	Git status te informa de los elementos unstaget del repositorio
+9.- Git trata los datos como ..
+	Ninguna de las anteriores
+	Archivos**
+	Carpetas
+	Snapshots
+10.- Internamente ¿Como gestiona git las ramas?
+	Crea un array de ramas en el mismo repositorio
+	Crea un log con los cambio del repositorio
+	Crea un diccionario con los cambios del repositorio
+	Crea un puntero al commit mas reciente para las nuevas ramas**
+11.-El comando git cherry-pick sirve para
+	Crea una etiqueta a un commit concreto
+	Seleccionar un commit concreto y ubicar el HEAD en ese punto del historico del repositorio**
+	Copiar un commit concreto a una rama nueva
+	Ninguna de las anteriores
+12.- A cerca del archivo gitIgnore. ¿Que frase es falsa?
+	Podemos tener varios archivos gitignore en directorios distintos
+	Se trata de un archivo que indica que carpetas y extensiones de archivos deben mantenerse al margen del control de  versiones y sus commits
+	Existen soluciones web que te permiten crear las plantillas gitignore para distintos tipos de proyectos
+	Todas son verdaderas**
+13.- Para crear un version del repositorio que diverge del trabajo principal del proyecto en el que estamos trabajando usaremos…
+	Git clone
+Git fork
+Git master
+Git branch**
+14.- Que conflictos pueden ocurrir cuando se realiza un push despues de un rebase
+	La url origin sera reseteada al valor por defecto
+	La HEAD actual sera eliminada y no podremos reiniciarla
+	Nada, Es practica habitual forzar un push despues de hacer un rebase
+	La rama master podría tener cambios existentes sobreescritos**
+15.-Si usamos el comando git add -A…   
+	Todos los archivos nuevos y editados en el directorio que trabajas pasan a la etapa de staged
+	Unicamente los archivos nuevos en el directorio que trabajas pasan a la etapa de staged**
+	Todos los archivos del directorio en el que trabajas pasan a la etapa staged en orden alfabético
+	Unicamente los archivos editados en ele directorio en el que trabajas pasan a la etapa staged
+16.- Si queremos incluir un mensaje para un commit concreto que comando deberiamos emplear?
+	Git commit -m “Mensaje”**
+	Git commit -a “Mensaje”
+	Git commit add. “Mensaje”
+	Git commit  “Mensaje”
+17.- Acerca del empleo de etiquetas Git para commits
+	Pueden servir para gestionar versiones de realesse
+	Pueden tener anotaciones
+	Podemos poner etiquetas a commits pasados
+Todas son ciertas**
+18.- Si usamos el comando git add *.js
+Estamos mandando todos los archivos JS a la etapa staged**
+Estamos realizando commits de todos los JS de la etapa 
+Nos dara un error
+Ninguna de las anteriores
+19.- El comando git status muestra informacion a cerca de los commits
+	Verdadero 
+	False**
+20.- Cuantas opciones existen en git para integrar cambios d una rama en otra
+1
+2**
+3
+4
